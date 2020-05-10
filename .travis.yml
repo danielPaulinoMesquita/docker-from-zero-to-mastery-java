@@ -15,8 +15,8 @@ before_deploy:
 deploy:
   provider: script
   script:
-    docker tag docker-from-zero-to-mastery-java:latest $DOCKER_USERNAME/docker-from-zero-to-mastery-java:latest;
-    docker push $DOCKER_USERNAME/docker-from-zero-to-mastery-java;
+    docker tag docker-from-zero-to-mastery-java:latest danielpaulinomesquita/docker-from-zero-to-mastery-java:tag2teste;
+    docker push danielpaulinomesquita/docker-from-zero-to-mastery-java;
   on:
     brach: master
 notifications:
